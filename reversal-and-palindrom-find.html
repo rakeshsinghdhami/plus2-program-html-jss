@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+    let n = parseInt(prompt("Enter any number:"));
+    let s = 0;
+    let r;
+    let z = n;
+
+    while (n != 0) {
+        r = n % 10;
+        s = s * 10 + r;
+        n = Math.floor(n / 10);
+    }
+
+    document.write("The reverse of the number is: " + s + "<br>");
+
+    if (z == s) {
+        document.write("The given number is a palindrome");
+    } else {
+        document.write("The given number is not a palindrome");
+    }
+</script>
+
+
+</body>
+</html>
